@@ -26,7 +26,7 @@ header {
     align-items: center;
     width: 100%;
     box-shadow: 0 15px 5px rgb(151, 151, 151);
-    z-index: 10;
+    z-index: -1;
 }
 
 .burger div {
@@ -39,6 +39,8 @@ header {
 
 .burger { 
     display: none;
+    z-index: 3;
+
 }
 header span {
     color: #32353A;
@@ -46,6 +48,7 @@ header span {
     padding-left: 2px;
     font-size: 15px;
     font-weight: 500;
+    z-index: 3;
 }
 
 .box-image img {
@@ -71,10 +74,16 @@ li button {
     font-size: 13px;
     transition: 0.5s;
     padding: 10px 5px;
+    z-index: 3;
 }
 
+.nav-links {
+    z-index: 3;
+
+}
 .nav-links li {
     display: inline-block;
+    z-index: 3;
 }
 
 hr {
@@ -84,6 +93,11 @@ hr {
     width: 30%;
 }
 
+.logo {
+    z-index: 3;
+
+}
+
 li a {
     text-decoration: none;
     color: #32353A;
@@ -91,6 +105,8 @@ li a {
     transition: 0.8s;
     font-weight: 500;
     font-size: 15px;
+    z-index: 3;
+
 }
 
 li .btn-login:hover {
@@ -334,35 +350,50 @@ footer {
 
 @media screen and (max-width:768px) {
     body{
-        overflow-x: hidden;
+
+        /* overflow-x: hidden; */
+        /* overflow: hidden; */
+    }
+
+    .start-section .welcome-text {
+        background-color: rgb(29, 29, 29);
     }
     .nav-links {
         position: absolute;
         right: 0px;
-        height: 50vh;
+        height: 15vh;
         top: 59px;
-        background-color: #161E2E;
-        display: flex;
+        background-color: #fff;
         flex-direction: column;
         align-items: center;
-        width: 50%;
-        transform: translateX(100%);
+        width: 100%;
+        transform: translateY(-100%);
         transition: 0.5s ease-in;
         justify-content: space-evenly;
+        display: flex;
+        z-index: 1;
     }
+
+    /* .nav-links2 {
+        display: flex;
+        transition: 0.5s;
+
+    } */
 
     .nav-links li {
         /* padding-top: 20px; */
         opacity: 0;
+        border-bottom: 2px;
+
     }
 
     .nav-links .home {
-        color: #fff;
+        color: #161E2E;
     }
 
     .nav-links .btn-login {
-        background-color: #fff;
-        color: #161E2E;
+        background-color: #161E2E;
+        color: #fff;
     }
 
     .burger {
