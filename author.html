@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- <link rel="stylesheet" type="text/css" href="./assets/datatables/datatables.min.css"/> -->
+    <!-- <link rel="stylesheet" type="text/css" href="assets/datatables/Bootstrap-4-4.1.1/css/bootstrap.css"> -->
+	<!-- <link rel="stylesheet" type="text/css" href="assets/datatables/media/css/jquery.datatables.css">
+	<link rel="stylesheet" type="text/css" href="assets/datatables/media/css/datatables.bootstrap.css"> -->
+    <link rel="stylesheet" href="//cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
+    <script src="//cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <img src="./assets/images/logo-no-text.png" alt="logo"> 
+        </div> 
+        <span>POLITEKNIK ACEH SELATAN</span>         
+        <ul class="nav-links">
+            <li><a href="./index.html" class="home">HOME</a></li>
+            <li> <a href="http://rp3.poltas.ac.id/"><button class="btn-login">LOGIN</button></a></li>
+        </ul>
+    </header>
+
+    <section class="start-section-small">
+        <div class="welcome-text">
+            Daftar Profil Penulis
+            <hr>
+        </div>
+        <div class="small-text">
+            Repositori Publikasi Penelitian Politeknik Aceh Selatan
+        </div>
+    </section>
+    <main class="author-main">
+        <a href="./index.html"><button class="btn-back">Kembali</button></a>
+        <section class="author-content">
+            <div class="data-table">
+            <table>
+                <!-- table-striped table-bordered -->
+                <table id="table_id" class="table table-hover data">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Author/Bidang Keahlian</th>
+                            <th>Unit Kerja</th>
+                            <th>RP2U Poltas</th>
+                            <th>Google Scholar</th>
+                            <th>Sinta Ristekdikti</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>A. Sakir., Dr., SE., MM</td>
+                            <td>Row 1 Data 2</td>
+                            <td>Row 1 Data 2</td>
+                            <td>Row 1 Data 2</td>
+                            <td>Row 1 Data 2</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Row 1 Data 2</td>
+                            <td>Row 1 Data 2</td>
+                            <td>Row 1 Data 2</td>
+                            <td>Row 1 Data 2</td>
+                            <td>Row 1 Data 2</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Row 1 Data 2</td>
+                            <td>Row 1 Data 2</td>
+                            <td>Row 1 Data 2</td>
+                            <td>Row 1 Data 2</td>
+                            <td>Row 1 Data 2</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Row 1 Data 2</td>
+                            <td>Row 1 Data 2</td>
+                            <td>Row 1 Data 2</td>
+                            <td>Row 1 Data 2</td>
+                            <td>Row 1 Data 2</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Row 1 Data 2</td>
+                            <td>Row 1 Data 2</td>
+                            <td>Row 1 Data 2</td>
+                            <td>Row 1 Data 2</td>
+                            <td>Row 1 Data 2</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Row 1 Data 2</td>
+                            <td>Row 1 Data 2</td>
+                            <td>Row 1 Data 2</td>
+                            <td>Row 1 Data 2</td>
+                            <td>Row 1 Data 2</td>
+                        </tr>
+                        <!-- <tr>
+                            <td>Row 2 Data 1</td>
+                            <td>Row 2 Data 2</td>
+                        </tr> -->
+                    </tbody>
+                </table>
+            </table>
+        </section>
+    </main>
+    
+    <script type="text/javascript" src="assets/datatables/datatables.min.js"></script>
+
+
+    <!-- <script>
+            $(document).ready( function () {
+            $('#table_id').DataTable();
+        } );
+    </script> -->
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('.data').DataTable();
+	});
+</script>
+</body>
+</html>
