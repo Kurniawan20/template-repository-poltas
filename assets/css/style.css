@@ -52,7 +52,7 @@ header span {
 }
 
 .box-image img {
-    margin-top: 30px;
+    margin-top: 70px;
     height: 70px;
 }
 
@@ -163,7 +163,7 @@ li .home:hover {
     font-size: 15px;
     color: #fff;
     font-weight: 500;
-    /* background-color: crimson; */
+  
 }
 
 .small-text {
@@ -279,15 +279,22 @@ li .home:hover {
 .box {
     margin: 10px 0px;
     padding:30px 20px;
-    height: 360px;
-    width: 360px;
+    height: 380px;
+    width: 300px;
     text-align: center;
     /* box-shadow: 0 0 3px #ccc; */
     box-shadow: 0px 0px 5px rgb(105, 105, 105);
     /* border-radius: 10px; */
     color: rgb(43, 42, 42);
     background-color: #fff;
+    transition: 0.5s;
+}
 
+
+.box:hover {
+   
+    box-shadow: 0px 0px 7px rgb(105, 105, 105);
+   
 }
 
 .btn {
@@ -313,6 +320,10 @@ li .home:hover {
 
 .text-description-2 {
     padding-top: 20px;
+}
+
+.text-description h2 {
+    padding-bottom: 20px;
 }
 
 .text-description-3 {
@@ -355,8 +366,31 @@ footer {
         /* overflow: hidden; */
     }
 
+    .start-section {
+        height: 420px;
+    }
+
     .start-section .welcome-text {
-        background-color: rgb(29, 29, 29);
+        background-color: rgba(29, 29, 29, 0.493);
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        /* height: 90px; */
+        padding: 10px 5px;
+    }
+
+    .start-section .search-text {
+        margin: 20px 0;
+        padding: 10px ;
+        font-size: 15px;
+        color: #fff;
+        font-weight: 500;
+        background-color: rgba(29, 29, 29, 0.493);
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+
+
     }
     .nav-links {
         position: absolute;
