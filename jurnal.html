@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <link rel="stylesheet" href="./assets/css/style.css">
-    <!-- <link rel="stylesheet" type="text/css" href="./assets/datatables/datatables.min.css"/> -->
-    <!-- <link rel="stylesheet" type="text/css" href="assets/datatables/Bootstrap-4-4.1.1/css/bootstrap.css"> -->
-    <!-- <link rel="stylesheet" type="text/css" href="assets/datatables/media/css/jquery.datatables.css">
-	<link rel="stylesheet" type="text/css" href="assets/datatables/media/css/datatables.bootstrap.css"> -->
-    <link rel="stylesheet" href="//cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
-    <script src="//cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/dataTables.semanticui.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/dataTables.semanticui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.js"></script>
 </head>
 
 <body>
@@ -45,58 +45,90 @@
         <a href="./index.html"><button class="btn-back">Kembali</button></a>
         <section class="author-content">
             <div class="data-table">
-                <table>
-                    <!-- table-striped table-bordered -->
-                    <table id="table_id" class="table table-hover data">
-                        <thead>
-                            <tr>
-                                <th>No</th>
-                                <th>Nama</th>
-                                <th>NIP</th>
-                                <th>Jumlah Prosiding</th>
-                                <th>Jumlah Jurnal</th>    
-                                <!-- <th>Author/Bidang Keahlian</th>
-                                <th>Unit Kerja</th>
-                                <th>Google Scholar</th>
-                                <th>Sinta Ristekdikti</th> -->
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>A. Sakir., Dr., SE., MM</td>
-                                <td>8871850017</td>
-                                <td>4</td>
-                                <td>5</td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>A. Sakir., Dr., SE., MM</td>
-                                <td>8871850017</td>
-                                <td>4</td>
-                                <td>5</td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>A. Sakir., Dr., SE., MM</td>
-                                <td>8871850017</td>
-                                <td>4</td>
-                                <td>5</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </table>
+                <table id="example" class="ui celled table" style="width:100%">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Judul</th>
+                        <th>Penulis</th>
+                        <th>NIP</th>
+                        <th>Tahun</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Tiger Nixon</td>
+                        <td>System Architect</td>
+                        <td>Edinburgh</td>
+                        <td>61</td>
+                        <td>2011/04/25</td>
+                    </tr>
+                    <tr>
+                        <td>Garrett Winters</td>
+                        <td>Accountant</td>
+                        <td>Tokyo</td>
+                        <td>63</td>
+                        <td>2011/07/25</td>
+                    </tr>
+                    <tr>
+                        <td>Garrett Winters</td>
+                        <td>Accountant</td>
+                        <td>Tokyo</td>
+                        <td>63</td>
+                        <td>2011/07/25</td>
+                    </tr>
+                    <tr>
+                        <td>Garrett Winters</td>
+                        <td>Accountant</td>
+                        <td>Tokyo</td>
+                        <td>63</td>
+                        <td>2011/07/25</td>
+                    </tr>
+                    <tr>
+                        <td>Garrett Winters</td>
+                        <td>Accountant</td>
+                        <td>Tokyo</td>
+                        <td>63</td>
+                        <td>2011/07/25</td>
+                    </tr>
+                    <tr>
+                        <td>Garrett Winters</td>
+                        <td>Accountant</td>
+                        <td>Tokyo</td>
+                        <td>63</td>
+                        <td>2011/07/25</td>
+                    </tr>
+                    <tr>
+                        <td>Garrett Winters</td>
+                        <td>Accountant</td>
+                        <td>Tokyo</td>
+                        <td>63</td>
+                        <td>2011/07/25</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th>No</th>
+                        <th>Judul</th>
+                        <th>Penulis</th>
+                        <th>NIP</th>
+                        <th>Tahun</th>
+                    </tr>
+                </tfoot>
+            </table>
+
         </section>
     </main>
     <footer>
 
     </footer>
-    <script type="text/javascript" src="assets/datatables/datatables.min.js"></script>
+    
+    <!-- <script type="text/javascript" src="assets/datatables/datatables.min.js"></script> -->
     <script src="./assets/script/app.js"></script>
     <script type="text/javascript">
-        $(document).ready(function () {
-            $('.data').DataTable();
-        });
+        $(document).ready(function() {
+            $('#example').DataTable();
+        } );
     </script>
 </body>
 

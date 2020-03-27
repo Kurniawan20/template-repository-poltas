@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- <link rel="stylesheet" type="text/css" href="./assets/datatables/datatables.min.css"/> -->
+    <!-- <link rel="stylesheet" type="text/css" href="assets/datatables/Bootstrap-4-4.1.1/css/bootstrap.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="assets/datatables/media/css/jquery.datatables.css">
+	<link rel="stylesheet" type="text/css" href="assets/datatables/media/css/datatables.bootstrap.css"> -->
+    <link rel="stylesheet" href="//cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
+    <script src="//cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <img src="./assets/images/logo-no-text.png" alt="logo">
+        </div>
+        <span>POLITEKNIK ACEH SELATAN</span>
+        <ul class="nav-links">
+            <li><a href="./index.html" class="home">HOME</a></li>
+            <li> <a href="http://rp3.poltas.ac.id/"><button class="btn-login">LOGIN</button></a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </header>
+
+    <section class="start-section-small">
+        <div class="welcome-text">
+            Profil Penulis
+            <hr>
+        </div>
+        <div class="small-text">
+            Repositori Publikasi Penelitian Politeknik Aceh Selatan
+        </div>
+    </section>
+    <main class="author-main">
+
+        <a href="./index.html"><button class="btn-back">Kembali</button></a>
+        <div class="container">
+
+            <div class="box-profile">
+                <div class="profile-images">
+                    <img src="./assets/images/user.png" alt="">
+                    <div class="text-name">
+                        Muhammad Risky Kurniawan
+                    </div>
+                    <hr>
+                </div>
+            </div>
+
+            <div class="warpper">
+                <input class="radio" id="one" name="group" type="radio" checked>
+                <input class="radio" id="two" name="group" type="radio">
+                <input class="radio" id="three" name="group" type="radio">
+                <div class="tabs">
+                    <label class="tab" id="one-tab" for="one">Jurnal</label>
+                    <label class="tab" id="two-tab" for="two">Prosiding</label>
+                    <!-- <label class="tab" id="three-tab" for="three">Prerequisites</label> -->
+                </div>
+                <div class="panels">
+                    <div class="panel" id="one-panel">
+                        <div class="number">1. </div>
+                        <div class="panel-title">
+                            Visual Analysis of Satellite Landsat Images Multitemporal and GPS as a Geographic
+                            Information System for Mapping of Nugmet Plantations in Tapaktuan</div>
+                        <hr>
+                    </div>
+                    <div class="panel" id="one-panel">
+                        <div class="number">2. </div>
+                        <div class="panel-title">
+                            Visual Analysis of Satellite Landsat Images Multitemporal and GPS as a Geographic
+                            Information System for Mapping of Nugmet Plantations in Tapaktuan</div>
+                        <hr>
+                    </div>
+                    <div class="panel" id="one-panel">
+                        <div class="number">3. </div>
+                        <div class="panel-title">
+                            Visual Analysis of Satellite Landsat Images Multitemporal and GPS as a Geographic
+                            Information System for Mapping of Nugmet Plantations in Tapaktuan</div>
+                        <hr>
+                    </div>
+                    <div class="panel" id="two-panel">
+                        <div class="panel" id="two-panel">
+                            <div class="number">1. </div>
+                            <div class="panel-title">
+                                Visual Analysis of Satellite Landsat Images Multitemporal and GPS as a Geographic
+                                Information System for Mapping of Nugmet Plantations in Tapaktuan</div>
+                            <hr>
+                        </div>
+                        <div class="panel" id="two-panel">
+                            <div class="number">2. </div>
+                            <div class="panel-title">
+                                Visual Analysis of Satellite Landsat Images Multitemporal and GPS as a Geographic
+                                Information System for Mapping of Nugmet Plantations in Tapaktuan</div>
+                            <hr>
+                        </div>
+                        <div class="panel" id="two-panel">
+                            <div class="number">3. </div>
+                            <div class="panel-title">
+                                Visual Analysis of Satellite Landsat Images Multitemporal and GPS as a Geographic
+                                Information System for Mapping of Nugmet Plantations in Tapaktuan</div>
+                            <hr>
+                        </div>           
+                   
+
+                    </div>
+                    <div class="panel" id="three-panel">
+                        <div class="panel-title">Note on Prerequisites</div>
+                        <p>We recommend that you complete Learn HTML before learning CSS.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+    <footer>
+
+    </footer>
+    <script type="text/javascript" src="assets/datatables/datatables.min.js"></script>
+    <script src="./assets/script/app.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.data').DataTable();
+        });
+    </script>
+</body>
+
+</html>
