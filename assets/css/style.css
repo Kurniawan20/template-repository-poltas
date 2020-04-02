@@ -81,7 +81,7 @@ li button {
     height: 33px;
     width: 65px;
     border:none;
-    background-color: #161E2E;
+    background-color: #31333B;
     font-weight: 500;
     color: #fff;
     box-shadow: 0 2px 2px rgb(105, 105, 105);
@@ -121,12 +121,12 @@ li a {
     font-weight: 500;
     font-size: 15px;
     z-index: 3;
-
 }
 
 li .btn-login:hover {
-    background-color: rgb(41, 53, 77);
-    box-shadow: 0 5px 3px rgb(105, 105, 105);
+    /* background-color: rgb(41, 53, 77); */
+    background-color: rgb(73, 75, 80);
+    box-shadow: 0 3px 3px rgb(105, 105, 105);
     color: #fff;
 }
 
@@ -139,7 +139,7 @@ li .home:hover {
 .data-table {
     margin-left: auto;
     margin-right: auto;
-    padding: 50px 10px;
+    padding: 0 10px 0px 10px;
     width: 100%;
 }
 .start-section {
@@ -275,6 +275,30 @@ li .home:hover {
     min-height: 100%;
 }
 
+.detail-main{
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    padding-top: 30px;
+    /* background-color: #161E2E; */
+    min-height: 100%;
+}
+
+.card-table {
+    /* background-color: tomato; */
+    box-shadow: 0 0 5px #ddd;
+    margin-bottom: 50px;
+}
+
+.card {
+    /* background-color: tomato; */
+    box-shadow: 0 0 5px #ddd;
+    margin: 10px 0;
+    height: 470px;
+    width: 100%;
+    padding: 30px;
+}
+
 .container {
   
     display: flex;
@@ -316,7 +340,7 @@ li .home:hover {
 }
 
 .box-profile {
-    background-color: #fff;
+    /* background-color: tomato; */
     max-width: 260px;
     height: 500px;
     border-radius: 5px;
@@ -326,12 +350,24 @@ li .home:hover {
     
 }
 
+.top-side {
+    width: 260px;
+    height: 210px;
+    /* background-color: violet; */
+}
+
+.bottom-side {
+    /* background-color: violet; */
+    padding: 20px;
+}
+
 .profile-images {
     width: 260px;
     height: 100px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 30px;
+    /* background-color: teal; */
     
 }
 
@@ -347,13 +383,13 @@ li .home:hover {
 }
 
 .box-profile hr {
-    margin-top: 20px;
+    margin-top: 0;
     width: 220px;
 }
 
 .text-name {
     text-align: center;
-    padding-top: 30px;
+    padding-top: 50px;
     font-weight: 400;
     font-size: 15px;
 
@@ -365,24 +401,103 @@ li .home:hover {
    
 }
 
+.info-container {
+/* background-color: tomato; */
+padding: 30px;
+display: flex;
+justify-content: center;
+
+}
+
+.info-box {
+    width: 250px;
+    height: 130px;
+    box-shadow: 0 0 5px #ccc;
+    background-color: #fff;
+    margin:10px;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 10px;
+    /* background: url('../images/hero-background.svg'); */
+    
+}
+
+.info-box a {
+    color: #000;
+}
+
+.info-icon {
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+    /* background-color: teal; */
+    padding-bottom: 10px;
+}
+
+.info-icon img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.info-icon li {
+    display: inline-block;
+    font-size: 80px;
+}
+
 .btn {
    
     width: 150px;
     height: 40px;
-    background-color: #161E2E;
+    background-color: #31333B;
     color: #fff;
     border: none;
     cursor: pointer;
     margin-top: 20px ;
     border-radius: 30px;
     box-shadow: 0 1px 3px rgb(105, 105, 105);
-    transition: .7s;
+    transition: 0.7s;
+    outline: none;
+}
 
+.btn-download {
+    background-color: #31333B;
+    color: #fff;
+    border: none;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    outline: none;
+    transition: 0.7s;
+    font-weight: 500;
+}
+
+.btn-detail {
+    background-color: #31333B;
+    color: #fff;
+    border: none;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    outline: none;
+    transition: 0.7s;
+    font-weight: 500;
 }
 
 .btn:hover {
-    background-color: rgb(41, 53, 77);
+    background-color: rgb(73, 75, 80);
     box-shadow: 0 5px 3px rgb(105, 105, 105);
+}
+
+.btn-download:hover {
+    background-color: rgb(73, 75, 80);
+    /* box-shadow: 0 5px 3px rgb(105, 105, 105); */
+
+}
+
+.btn-detail:hover {
+    background-color: rgb(73, 75, 80);
+    /* box-shadow: 0 5px 3px rgb(105, 105, 105); */
 
 }
 
@@ -402,7 +517,7 @@ footer {
     /* margin-top: 50px; */
     width: 100%;
     height: 50px;
-    background-color:#161E2E;
+    background-color:#31333B;
     box-shadow: 0 0 3px #ccc;
     /* position: absolute;
     bottom: 0;
@@ -495,7 +610,8 @@ footer {
     }
 
     .nav-links .btn-login {
-        background-color: #161E2E;
+        /* background-color: #161E2E; */
+        background-color: #31333B;
         color: #fff;
     }
 
@@ -562,7 +678,7 @@ footer {
 
     min-height:458px;
     width:100%;
-    max-width:800px;
+    /* min-width:900px; */
     border-radius:3px;
     overflow:hidden;
     padding:20px;  
