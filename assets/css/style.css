@@ -543,6 +543,8 @@ footer {
     .start-section {
         height: 450px;
     }
+
+    
 }
 
 @media screen and (max-width:768px) {
@@ -550,6 +552,10 @@ footer {
 
         /* overflow-x: hidden; */
         /* overflow: hidden; */
+    }
+
+    .info-box {
+        height: 150px;
     }
 
     .start-section {
